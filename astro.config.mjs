@@ -5,13 +5,5 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-    vite: {
-        plugins: [tailwindcss()]
-    },
-    integrations: [react()],
-    adapter: netlify({
-        devFeatures: {
-            environmentVariables: true
-        }
-    })
+    site: 'https://doobob.net',
 });
